@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:text="Spelling Bee"
+        android:textSize="30sp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Minutes"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+
+            <Spinner
+                android:id="@+id/SP_MINUTOS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#555353"/>
+
+            <Button
+                android:id="@+id/B_UNO"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Play"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/B_SCORES"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="Scores"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/B_ACERCA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

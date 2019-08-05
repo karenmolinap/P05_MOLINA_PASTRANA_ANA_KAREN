@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Score:"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/TV_ScoreNom"
+            />
+        <TextView
+            android:text=""
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/TV_Score"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:textSize="5sp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV_Adivinar"
+        />
+    <Button
+        android:text="Click to hear the word to spell"
+        android:textSize="20sp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/B_Leer"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/TV_Palabra"
+            android:textSize="30sp"
+            android:background="#E0D782"
+            android:textColor="#000"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:hint="Write here..."
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/B_Siguiente"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Next"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/B_Leer2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="spell"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/B_Salir"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Exit"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
